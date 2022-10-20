@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFDigitalSkills2017Core.NoLogoutDetected"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDigitalSkills2017Core"
+        mc:Ignorable="d"
+        Title="NoLogoutDetected" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="LbInfo" Content="No logout detected for your last login on " HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="700" FontSize="16"/>
+        <Label x:Name="LbReason" Content="Reason:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="TbReason" HorizontalAlignment="Left" Margin="50,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="680" Height="220" FontSize="14" BorderBrush="Black" BorderThickness="2,2,2,2"/>
+        <RadioButton x:Name="RbntSoftwareCrash" Content="Software Crash" Margin="100,360,0,0" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Left" VerticalContentAlignment="Center" BorderBrush="Black" BorderThickness="3,3,3,3"/>
+        <RadioButton x:Name="RbntSystemCrash" Content="System Crash" Margin="310,360,0,0" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Left" VerticalContentAlignment="Center" BorderBrush="Black" BorderThickness="3,3,3,3"/>
+        <Button x:Name="BtnConfim" Content="Confirm" HorizontalAlignment="Left" Margin="600,360,0,0" VerticalAlignment="Top" Background="White" FontSize="16" Width="130" BorderThickness="2,2,2,2" BorderBrush="Black" Click="BtnConfirm_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>

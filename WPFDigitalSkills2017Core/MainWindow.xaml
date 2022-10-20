@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFDigitalSkills2017Core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDigitalSkills2017Core"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800" >
+    <Grid>
+        <Image x:Name="ImLogo" Margin="160,55,160,232" Source="/Resources/DS2017_TP09_color.png"/>
+        <Label x:Name="LbUserName" Content="Username:" HorizontalAlignment="Left" Margin="140,246,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbPassword" Content="Password:" HorizontalAlignment="Left" Margin="146,286,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbUserName" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" TextAlignment="Center" Text="j.doe@amonic.com"/>
+        <PasswordBox x:Name="PbPassword" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="370" HorizontalContentAlignment="Center"/>
+        <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Left" Margin="235,345,0,0" VerticalAlignment="Top" Click="BtnLogin_Click" Width="125" Background="White">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="BtnExit" Content="Exit" HorizontalAlignment="Left" Margin="425,345,0,0" VerticalAlignment="Top" Width="125" Background="White" Click="BtnExit_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+    </Grid>
+</Window>
