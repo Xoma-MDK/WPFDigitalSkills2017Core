@@ -10,8 +10,8 @@
         <Image x:Name="ImLogo" Margin="160,55,160,232" Source="/Resources/DS2017_TP09_color.png"/>
         <Label x:Name="LbUserName" Content="Username:" HorizontalAlignment="Left" Margin="140,246,0,0" VerticalAlignment="Top"/>
         <Label x:Name="LbPassword" Content="Password:" HorizontalAlignment="Left" Margin="146,286,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TbUserName" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" TextAlignment="Center" Text="j.doe@amonic.com"/>
-        <PasswordBox x:Name="PbPassword" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="370" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="TbUserName" HorizontalAlignment="Center" Margin="0,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="370" TextAlignment="Center" Text="j.doe@amonic.com" KeyDown="TbUserName_KeyDown"/>
+        <PasswordBox x:Name="PbPassword" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="370" HorizontalContentAlignment="Center" KeyDown="PbPassword_KeyDown"/>
         <Button x:Name="BtnLogin" Content="Login" HorizontalAlignment="Left" Margin="235,345,0,0" VerticalAlignment="Top" Click="BtnLogin_Click" Width="125" Background="White">
             <Button.Resources>
                 <Style TargetType="Border">
