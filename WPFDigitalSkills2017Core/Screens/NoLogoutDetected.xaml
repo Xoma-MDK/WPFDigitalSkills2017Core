@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDigitalSkills2017Core"
         mc:Ignorable="d"
-        Title="NoLogoutDetected" Height="450" Width="800">
+        Title="No logout detected" Height="450" Width="800" ResizeMode="NoResize">
     <Grid>
         <Label x:Name="LbInfo" Content="No logout detected for your last login on " HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="700" FontSize="16"/>
         <Label x:Name="LbReason" Content="Reason:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" FontSize="16"/>

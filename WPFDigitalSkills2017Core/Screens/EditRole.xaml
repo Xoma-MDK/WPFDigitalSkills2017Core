@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFDigitalSkills2017Core.EditRole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDigitalSkills2017Core"
+        mc:Ignorable="d"
+        Title="Edit Role" Height="300" Width="421" ResizeMode="NoResize">
+    <Grid>
+        <Label x:Name="LbEmail" Content="Email addresss" HorizontalAlignment="Left" Margin="80,30,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LbFirstName" Content="First name" HorizontalAlignment="Left" Margin="80,57,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbEmail" IsReadOnly="True" Margin="190,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="Black" HorizontalAlignment="Left" Width="150" IsEnabled="False"/>
+        <TextBox x:Name="TbFirstName" IsReadOnly="True" HorizontalAlignment="Left" Margin="190,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="Black" IsEnabled="False"/>
+        <Label x:Name="LbLastName" Content="Last name" HorizontalAlignment="Left" Margin="80,80,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbLastName" IsReadOnly="True" HorizontalAlignment="Left" Margin="190,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" BorderBrush="Black" IsEnabled="False"/>
+        <Label x:Name="LbOffice" Content="Office" HorizontalAlignment="Left" Margin="80,117,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CbOffices" HorizontalAlignment="Left" Margin="190,117,0,0" VerticalAlignment="Top" Width="150" BorderThickness="2,2,2,2" BorderBrush="Black" IsReadOnly="True" IsEnabled="False"/>
+        <Label x:Name="LbRole" Content="Role" HorizontalAlignment="Left" Margin="80,156,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="RbntUser" Content="User"  VerticalAlignment="Top" FontSize="12" HorizontalAlignment="Left" VerticalContentAlignment="Center" BorderBrush="Black" BorderThickness="2" Margin="191,164,0,0"/>
+        <RadioButton x:Name="RbntAdministrator" Content="Administrator"  VerticalAlignment="Top" FontSize="12" HorizontalAlignment="Left" VerticalContentAlignment="Center" BorderBrush="Black" BorderThickness="2" Margin="190,187,0,0"/>
+        <Button x:Name="BtnApply" Content="Apply" HorizontalAlignment="Left"  VerticalAlignment="Top" Background="#FFFFFEFE" BorderBrush="Black" Width="100" Margin="113,228,0,0" Click="BtnApply_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="BtnCancel" Content="Cancel" HorizontalAlignment="Left"  VerticalAlignment="Top" Background="#FFFFFEFE" BorderBrush="Black" Width="100" Margin="229,228,0,0" Click="BtnCancel_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
